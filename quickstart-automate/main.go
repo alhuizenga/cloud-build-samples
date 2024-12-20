@@ -19,6 +19,6 @@ import (
 )
 
 func main() {
-    fmt.Println("Hello, big fat ugly fantastic sleazy breezy universe!")
+    fmt.Println("Hello, world!")
 }
 
