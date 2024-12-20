@@ -22,5 +22,6 @@ images:
 - 'us-west2-docker.pkg.dev/cloud-build-attestations/quickstart-docker-repo/quickstart-image:nyc'
 options:
     logging: CLOUD_LOGGING_ONLY
+    requestedVerifyOption: VERIFIED
 
 # [END cloudbuild_quickstart_build]
