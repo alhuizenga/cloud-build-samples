@@ -14,5 +14,5 @@
 # limitations under the License.
 
 # [START cloudbuild_quickstart_build_sh]
-echo "Hello, Wisconsin! The time is $(date)."
+echo "Hello, Chicago! The time is $(date)."
 # [END cloudbuild_quickstart_build_sh]
