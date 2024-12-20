@@ -12,10 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# [START cloudbuild_quickstart_automate]
-  steps:
-    - name: golang
-      script: go run quickstart-automate/main.go
-  options:
-    logging: CLOUD_LOGGING_ONLY
-# [END cloudbuild_quickstart_automate]
+# [START cloudbuild_quickstart_build]
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  script: |
+    docker build -t us-west2-docker.pkg.dev/cloud-build-attestations/quickstart-docker-repo/quickstart-image:tag1 .
+  automapSubstitutions: true
+images:
+- 'us-west2-docker.pkg.dev/cloud-build-attestations/quickstart-docker-repo/quickstart-image:tag1'
+# [END cloudbuild_quickstart_build]
